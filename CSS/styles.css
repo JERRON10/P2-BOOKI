@@ -203,21 +203,19 @@ img{
 }
 
 .hébergements{
-    background-color: red;
     display: flex;
     flex-flow: wrap row;
-    height: 626px;
     margin-top: 35px;
 }
 
-.hébergements h1{
+#hébergement {
     font-size: 22px;
     font-weight: 700;
     line-height: 26px;
     margin-left: 50px;
 }
 
-article{
+.articles_hébergements {
     background-color: #f2f2f2;
     border-radius: 20px;
     width: 65%;
@@ -307,9 +305,6 @@ aside{
     height: 626px;
 }
 
-.titre_aside{
-}
-
 .titre_aside h1{
     font-size: 22px;
     font-weight: 700;
@@ -377,22 +372,21 @@ aside{
 /* -----------ACTIVITE A MARSEILLE--------- */
 
 .activité_marseille{
-    background-color: green;
     margin-top: 50px;
+    width: 100%;
 }
 
-
-.activité_marseille h1{
+#activités {
     font-size: 22px;
     font-weight: 700;
     line-height: 26px;
 }
 
-.cartes_activité{
+.cartes_activités{
     display: flex;
-    flex-flow: wrap row;
+    flex-flow:row;
     justify-content: space-between;
-    margin-top: 20px;
+
 }
 
 .carte_a2{
@@ -462,7 +456,7 @@ footer{
 
 /* ------------------------MEDIA--------------------------- */
 
-@media only screen and (max-width:1320px) {
+@media only screen and (max-width:992px) {
 
     body{
         margin: 30px 70px;
@@ -477,9 +471,8 @@ footer{
         flex-wrap: wrap;
     }
 
-    article{
+    .articles_hébergements{
         width: 100%;
-        margin-right: 0;
     }
 
     aside{
@@ -497,7 +490,7 @@ footer{
     }
 
     .activité_marseille{
-        margin-top: 50px;
+        width: 100%;
         }
         
 
