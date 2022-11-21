@@ -24,14 +24,14 @@ header {
     margin: 30px 5px;
 }
 
-    /*  ---- HEADER LOGO ---- */
+/*  --------------------------- HEADER LOGO --------------------- */
 
 .logo img{
     width: 61px;
     height: 19px;
 }
 
-    /* ---- HEADER NAV ----*/
+/* ----------------------------- HEADER NAV --------------------*/
 
 nav ul{
     display: flex;
@@ -55,7 +55,7 @@ nav ul li a:hover{
     border-top: 2px blue solid;
 }
 
-/* ---------------------------SECTION RECHERCHE--------------------------- */
+/* ----------------------------- RECHERCHE--------------------------- */
 
 h1{
     font-size: 22px;
@@ -72,7 +72,7 @@ h2{
     margin-bottom: 20px;
 }
 
-    /* ----- BAR RECHERCHE ---- */
+/* ---------------------------- BAR RECHERCHE ------------------- */
 
 .form_recherche{
     border-top: 20px;
@@ -131,7 +131,7 @@ input{
     display: none;
 }
 
-/* -----------LIENS FILTRES---------- */
+/* -----------------------------LIENS FILTRES------------------ */
 
 .liens_filtres{
     height: 35px;
@@ -153,7 +153,7 @@ input{
     display: flex;
 }
 
-.liens_filtres li {
+.liens_filtres li{
     padding: 10px 20px;
     margin-right: 35px;
     border: 1px #f2f2f2 solid;
@@ -162,7 +162,6 @@ input{
     font-size: 17px;
     font-weight: 700;
     line-height: 20px;
-
 }
 
 .liens_filtres ul li a{
@@ -173,7 +172,7 @@ input{
     background-color: #DEEBFF;
 }
 
-    /* ---- TEXTE INFO ---- */
+/* --------------------------- TEXTE INFO --------------------- */
 
 .info{
     margin-top: 40px;
@@ -181,7 +180,7 @@ input{
     justify-content: flex-start;
     align-items: center;
     margin-left: 4px;
-    }
+}
 
 .info img{
     border: 1px #d9d9d9 solid;
@@ -196,13 +195,13 @@ input{
     line-height: 19px;
 }
 
-/* ----------------------- SECTION HEBERGEMENTS ----------- */
+/* ------------------------ SECTION HEBERGEMENTS ----------- */
 
-img{
+img {
     object-fit: cover;
 }
 
-.hébergements{
+.hébergements {
     display: flex;
     flex-flow: wrap row;
     margin-top: 35px;
@@ -296,7 +295,7 @@ img{
     margin-top: 0px;
 }
 
-/* ---------------ASIDE----------------- */
+/* ------------------------ASIDE----------------------- */
 
 aside{
     background-color: #f2f2f2;
@@ -369,7 +368,7 @@ aside{
     width: 10px;
 }
 
-/* -----------ACTIVITE A MARSEILLE--------- */
+/* ----------------------ACTIVITE A MARSEILLE--------- */
 
 .activité_marseille{
     margin-top: 50px;
@@ -412,7 +411,7 @@ aside{
     line-height: 18.78px;
 }
 
-/* -----------FOOTER-------------- */
+/* --------------------------FOOTER--------------------- */
 
 footer{
     background-color: #f2f2f2;
@@ -435,9 +434,6 @@ footer{
     margin-left: 40px;
 }
 
-.info.footer ul{
-}
-
 .info_footer li{
     list-style-type: none;
     font-size: 16px;
@@ -453,8 +449,7 @@ footer{
 }
 
 
-
-/* ------------------------MEDIA--------------------------- */
+/* ----------------MEDIA QUERIES-------------------- */
 
 @media only screen and (max-width:992px) {
 
@@ -493,5 +488,4 @@ footer{
         width: 100%;
         }
         
-
 }
