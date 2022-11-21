@@ -1,0 +1,504 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(/CSS/Raleway/Raleway-VariableFont_wght.ttf) format(truetype),
+    url(/CSS/Raleway/Raleway-Italic-VariableFont_wght.ttf) format(truetype);
+}
+
+/* --------------------------------BODY----------------------------  */
+
+body{
+    font-family: "raleway";
+    font-weight: 400;
+    margin: 30px 50px;
+    /* !!! margin-top décale vers le haut herbegements !!! */
+}
+
+/* -------------------------------HEADER----------------------------- */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin: 30px 5px;
+}
+
+    /*  ---- HEADER LOGO ---- */
+
+.logo img{
+    width: 61px;
+    height: 19px;
+}
+
+    /* ---- HEADER NAV ----*/
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 67px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 44px 20px
+    /* difficulté avec hover lien a car decalage vers le haut */
+}
+
+nav ul li a:hover{
+    color: blue;
+    font-weight: 500;
+    border-top: 2px blue solid;
+}
+
+/* ---------------------------SECTION RECHERCHE--------------------------- */
+
+h1{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 8px;
+}
+
+h2{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+    /* ----- BAR RECHERCHE ---- */
+
+.form_recherche{
+    border-top: 20px;
+    width: 500px;
+    position: relative;    
+}
+
+label {
+    background-color: #f2f2f2;
+    position: absolute;
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+label i{
+    position: absolute;
+    top: 16px;
+    right: 18px;
+}
+
+input{
+    position: relative;
+    color: rgb(0, 0, 0);
+    width: 282px;
+    height: 49px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    border: 1px #f2f2f2 solid;
+    font-family: "raleway";
+    left: 50px;
+}
+
+::placeholder{
+    color: black;
+}
+
+.logo_recherche{
+    position: absolute;
+    width: 132px;
+    height: 49px;
+    border-radius: 0 15px 15px 0;
+    background-color: blue;
+    color: white;
+    left:286px;
+    top:0px;
+}
+
+.logo_recherche p{
+    font-weight: 700;
+    text-align: center;
+}
+
+.logo_recherche i {
+    display: none;
+}
+
+/* -----------LIENS FILTRES---------- */
+
+.liens_filtres{
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 7px;
+    padding: 10px 0;
+}
+
+.liens_filtres p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.liens_filtres ul{
+    display: flex;
+}
+
+.liens_filtres li {
+    padding: 10px 20px;
+    margin-right: 35px;
+    border: 1px #f2f2f2 solid;
+    border-radius: 25px;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+
+}
+
+.liens_filtres ul li a{
+    text-decoration: none;
+}
+
+.liens_filtres li:hover{
+    background-color: #DEEBFF;
+}
+
+    /* ---- TEXTE INFO ---- */
+
+.info{
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 4px;
+    }
+
+.info img{
+    border: 1px #d9d9d9 solid;
+    padding: 4px 8px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.info p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+/* ----------------------- SECTION HEBERGEMENTS ----------- */
+
+img{
+    object-fit: cover;
+}
+
+.hébergements{
+    background-color: red;
+    display: flex;
+    flex-flow: wrap row;
+    height: 626px;
+    margin-top: 35px;
+}
+
+.hébergements h1{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-left: 50px;
+}
+
+article{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 65%;
+    margin-right: 40px;
+    height: 626px;
+}
+
+.les_cartes{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    margin: 25px;
+    height: 450px;
+}
+
+.carte{
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 2px 2px 10px lightgrey;
+    width: 246px;
+    height: 199px;
+}
+
+.carte a{
+    text-decoration: none;
+    color: black;
+}
+
+.carte .image{
+    border-radius: 20px 20px 0 0;
+    width: 95%;
+    height: 55%;
+    margin: 5px;
+}
+
+.carte h2{
+    margin-left: 16px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+.carte h3{
+    margin-left: 16px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.image_star_gris {
+    opacity: 0.1;
+    width: 12px;
+}
+
+.carte p {
+    margin-left:16px;
+    margin-top: 5px;
+}
+
+.image_star_gris {
+    opacity: 0.1;
+    width: 10px;
+}
+
+.carte p img{
+    width: 10px;
+}
+
+.affichez{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+/* ---------------ASIDE----------------- */
+
+aside{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 30%;
+    height: 626px;
+}
+
+.titre_aside{
+}
+
+.titre_aside h1{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    margin:50px 30px 10px 30px
+}
+
+.logo_stat{
+    margin: 5px 0;
+    width: 18px;
+    float: right;
+}
+
+.cartes_aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cartes_a{
+    background-color: white;
+    box-shadow: 2px 2px 10px lightgray;
+    border-radius: 20px;
+    width: 343px;
+    height: 144px;
+    margin: 15px;
+}
+
+.cartes_a a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.image_aside{
+    border-radius: 20px 0 0 20px;
+    float: left;
+    padding: 5px;
+    height: 92%;
+    width: 137px;
+}
+
+.cartes_a h2{
+    margin-top: 16px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+.cartes_a h3{
+    margin-left: 16px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.cartes_a p img{
+    width: 10px;
+}
+
+/* -----------ACTIVITE A MARSEILLE--------- */
+
+.activité_marseille{
+    background-color: green;
+    margin-top: 50px;
+}
+
+
+.activité_marseille h1{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.cartes_activité{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.carte_a2{
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 12px lightgray;
+}
+
+.carte_a2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.carte_a2 img{
+    height: 389px;
+    width: 302px;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.carte_a2 h2{
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+
+/* -----------FOOTER-------------- */
+
+footer{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 60px;
+    padding-left: 30px;
+    height: 225px;
+}
+
+.info_footer{
+    margin-top: 40px;
+    margin-right: 180px;
+}
+
+.info_footer h2{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+.info.footer ul{
+}
+
+.info_footer li{
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400; 
+    margin-bottom: 10px;   
+}
+
+.info_footer a{
+    color: black;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+
+
+/* ------------------------MEDIA--------------------------- */
+
+@media only screen and (max-width:1320px) {
+
+    body{
+        margin: 30px 70px;
+    }
+
+    .liens_filtres li {
+        margin-right: 20px;
+    }
+    
+    .hébergements{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    article{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    aside{
+        width: 100%;
+        height: 280px;
+    }
+
+    .cartes_aside{
+        display: flex;
+    }
+
+    .cartes_a{
+        width: 150px;
+        height: 100px;
+    }
+
+    .activité_marseille{
+        margin-top: 50px;
+        }
+        
+
+}
