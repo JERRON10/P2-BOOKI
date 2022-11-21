@@ -451,7 +451,7 @@ footer{
 
 /* ----------------MEDIA QUERIES-------------------- */
 
-@media only screen and (max-width:992px) {
+@media only screen and (max-width:1000px) {
 
     body{
         margin: 30px 70px;
@@ -489,3 +489,6 @@ footer{
         }
         
 }
+
+ /* REVOIR LE BODY LES MARGES. OUI OU NON?
+ CONTINUER MEDIA QUERIES */
