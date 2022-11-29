@@ -73,7 +73,8 @@ nav li{
 
 .bouton_hebergements:hover, .bouton_activites:hover{
     color: blue;
-    font-weight: 500;
+    /* font-weight: 500; */
+    /* google chrome ok mais firefox non */
     border-top: 2px blue solid;
 }
 
@@ -117,7 +118,7 @@ label i{
 input{
     position: relative;
     color: rgb(0, 0, 0);
-    width: 282px;
+    width: 237px;
     height: 49px;
     font-size: 18px;
     font-weight: 700;
