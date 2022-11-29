@@ -85,7 +85,7 @@ nav li{
     font-weight: 700;
 }
 
-.recherche h2{
+.recherche h3{
     margin-top: 10px;
     font-size: 16px;
     font-weight: 400;
@@ -225,7 +225,7 @@ input{
     /* jouer avec padding et border-radius pour avoir cercle */
 }
 
-.info h2{
+.info h3{
     font-size: 16px;
     font-weight: 400;
 }
@@ -343,7 +343,7 @@ aside{
     /* titre "les plus populaires" et logo espacé */
 }
 
-.titre_aside h1{
+.titre_aside h2{
     font-size: 22px;
     font-weight: 700;
     margin: 20px 0;
@@ -389,6 +389,7 @@ aside{
     justify-content: space-between;
     align-items:flex-start;
     height: 95%;
+    padding-left: 3px;
     /* textes et étoiles en colonne et espacés */
 }
 
@@ -442,7 +443,8 @@ aside{
 .carte_activite h2{
     font-weight: 700;
     font-size: 16px;
-    margin: 10px;
+    margin: 0;
+    padding: 10px;
 }
 
 /* ---- FOOTER ---- */
@@ -593,7 +595,7 @@ footer{
 
 /* ---- MOBILE BAR RECHERCHE ---- */
 
-    .recherche h1, .recherche h2, .form_recherche{
+    .recherche h1, .recherche h3, .form_recherche{
         margin-left: 20px;
     }
 
@@ -683,19 +685,20 @@ footer{
         width: 100%;
         margin-bottom: 10px;
     }
-    
+
     .bouton_affichez_plus{
         display: none;
     }
 
 /* ---- MOBILE SECTION ACTIVITES A MARSEILLE ---- */
 
-    .activite_marseille{
-        margin: 80px 20px;
+    .activites_marseille{
+        padding: 0 20px;
+        margin: 100px 0;
     }
 
-    .activite_marseille h1{
-        width: 60%;
+    #activites{
+        width: 50%;
         margin-bottom: 0;
         /* 60% de largeur pour le titre sur 2 lignes comme la maquette */
     }
