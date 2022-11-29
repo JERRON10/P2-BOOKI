@@ -548,7 +548,7 @@ footer{
 
     @media screen and (max-width: 768px) {
 
-    body {
+    body{
         margin: 0;
     }
 
@@ -666,22 +666,25 @@ footer{
 
 /* ---- MOBILE ARTICLE HEBERGEMENTS ---- */
 
-    .articles_hebergements {
+    .articles_hebergements{
         background-color: white;
         margin: 0;
         padding: 0 20px;
     }
+
     .conteneur_cartes_hebergements{
         flex-flow: column;
         background-color: white;
         /* la couleur du fond devient blanc */
     }
+
     .carte_hebergements{
         height: 199px;
         width: 100%;
         margin-bottom: 10px;
     }
-    .bouton_affichez_plus {
+    
+    .bouton_affichez_plus{
         display: none;
     }
 
