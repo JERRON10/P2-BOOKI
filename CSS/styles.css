@@ -4,7 +4,7 @@
     url(/CSS/Raleway/Raleway-Italic-VariableFont_wght.ttf) format(truetype);
 }
 
-/* --------------------------------BODY----------------------------  */
+/* ---- BODY ---- */
 
 body{
     font-family: "raleway";
@@ -13,76 +13,85 @@ body{
 }
 
 main{
-    margin: 0 50px;
     max-width: 1400px;
-    margin: auto;
+    margin: 0 50px;
 }
 
-/* -------------------------------HEADER----------------------------- */
+img{
+    object-fit: cover;
+    /* pour une image non déformer */
+}
 
-header {
-    background-color: lightgreen;
+a{
+    color: black;
+    text-decoration: none;
+    /* tous les liens sans underline */
+}
+
+/* ---- HEADER ---- */
+
+header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 26px 10px 20px 5px;
+    width: 100%;
+    height: 112px;
+    margin-bottom: 10px;
 }
 
-/*  --------------------------- HEADER LOGO --------------------- */
+/* ---- HEADER LOGO ---- */
 
 .logo img{
     width: 61px;
     height: 19px;
 }
 
-/* ----------------------------- HEADER NAV --------------------*/
+/* ---- HEADER NAV ----*/
 
 nav ul{
-    width: 50%;
-    background-color: lightcoral;
     display: flex;
-    justify-content: center;
 }
 
-nav ul li{
+nav li{
     list-style: none;
 }
 
-nav ul li a{
-    padding: 40px 20px 20px 20px;
-    background-color: red;
+.bouton_hebergements{
     color: black;
     text-decoration: none;
     font-size: 16px;
-    border: 2px black solid;
+    padding: 45px 30px 22px 30px;
 }
 
-nav ul li a:hover{
+.bouton_activites{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 45px 40px 22px 40px;
+}
+
+.bouton_hebergements:hover, .bouton_activites:hover{
     color: blue;
     font-weight: 500;
     border-top: 2px blue solid;
 }
 
-/* ----------------------------- RECHERCHE--------------------------- */
+/* ----SECTION RECHERCHE ---- */
 
-.recherche h1 {
+.recherche h1{
     margin: 0;
     font-size: 22px;
-    line-height: 26px;
     font-weight: 700;
 }
 
-.recherche h2 {
+.recherche h2{
     margin-top: 10px;
     font-size: 16px;
-    line-height: 18px;
     font-weight: 400;
 }
 
-/* ---------------------------- BAR RECHERCHE ------------------- */
-
-
+/* ---- BAR RECHERCHE ---- */
 
 .form_recherche{
     margin-top: 20px;
@@ -91,7 +100,7 @@ nav ul li a:hover{
     position: relative;    
 }
 
-label {
+label{
     background-color: #f2f2f2;
     position: absolute;
     width: 50px;
@@ -128,25 +137,24 @@ input{
     height: 49px;
     border-radius: 0 15px 15px 0;
     background-color: blue;
-    color: white;
-    left:286px;
-    top:0px;
+    left: 286px;
+    top: 0px;
 }
 
-.logo_recherche p{
+.logo_recherche a{
+    color: white;
+}
+
+.logo_recherche{
     font-weight: 700;
     text-align: center;
 }
 
-.logo_recherche i {
+.icone_loupe{
     display: none;
 }
 
-/* -----------------------------LIENS FILTRES------------------ */
-
-ul {
-    padding: 0;
-}
+/* ---- SECTION LIENS FILTRES ----*/
 
 .liens_filtres{
     margin-top: 20px;
@@ -154,97 +162,96 @@ ul {
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
+    width: 100%;
 }
 
 .liens_filtres h2{
     font-size: 18px;
     font-weight: 700;
-    line-height: 21px;
 }
-
 
 .liens_filtres ul{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 900px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    width: 850px;
+    /* utilisation space-around avec width fixe */
 }
 
-.logo_filtre{
+.bouton_filtre{
     border: 1px #f2f2f2 solid;
     border-radius: 25px;
     list-style: none;
     font-size: 17px;
     font-weight: 700;
-    line-height: 20px;
     padding: 10px 18px;
 }
 
-.logo_filtre a{
-    color: black;
-    text-decoration: none;
+.bouton_filtre a{ 
+    padding: 5px 0;
+    /* padding à 5px pour augmenter surface cliquable */
 }
 
-.logo_filtre a i{
+.bouton_filtre a i{
     margin-right: 10px;
     color: #0065fc;
     font-size: 20px;
 }
 
-.logo_filtre:hover{
+.bouton_filtre:hover{
     background-color: #DEEBFF;
+    /* surface du bouton entier */
 }
 
-/* --------------------------- TEXTE INFO --------------------- */
+/* ---- TEXTE INFO ---- */
 
-.info {
+.info{
     padding: 0;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.info p i {
+.info p i{
     border: 1px #d9d9d9 solid;
     padding: 6px 9px;
     font-size: 10px;
     color: #0065fc ;
     border-radius: 100px;
     margin-right: 10px;
+    /* jouer avec padding et border-radius pour avoir cercle */
 }
 
-.info h2 {
+.info h2{
     font-size: 16px;
     font-weight: 400;
-    line-height: 18px;
 }
 
-/* -------------- SECTION HEBERGEMENTS ET ASIDE ----------- */
-
-img {
-    object-fit: cover;
-}
+/* ---- SECTION HEBERGEMENTS ET ASIDE... ---- */
 
 .hebergements_et_aside {
     display: flex;
     flex-flow: wrap row;
+    /* 2 blocs gris */
 }
 
-/* ------------------ ARTICLES HEBERGEMENTS ---------------- */
+/* ---- ARTICLES HEBERGEMENTS ---- */
 
-.articles_hebergements {
+.articles_hebergements{
     background-color: #f2f2f2;
     flex: 5;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 40px 40px;
+    padding: 30px 40px;
+    /* utilisation de flex=5 pour avoir le bloc gauche */
 }
 
-#hebergements {
+#hebergements{
     font-size: 22px;
     font-weight: 700;
 }
@@ -253,6 +260,7 @@ img {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    /* wrap pour faire descendre les cartes */
 }
 
 .carte_hebergements{
@@ -263,6 +271,7 @@ img {
     width: 30%;
     padding: 5px;
     margin-bottom: 30px;
+    /* la largeur des cartes est de 30% pour rentrer dans le bloc */
 }
 
 .carte_hebergements img{
@@ -276,6 +285,8 @@ img {
     flex-direction: column;
     justify-content: space-around;
     height: 35%;
+    margin-left: 5px;
+    /* texte et étoiles en colonnes*/
 }
 
 .carte_hebergements h2{
@@ -293,6 +304,7 @@ img {
 .stars_hebergements{
     display: flex;
     font-size: 12px;
+    /* flex pour aligner les étoiles */
 }
 
 .star_blue{
@@ -304,12 +316,12 @@ img {
     color: lightgrey;
 }
 
-.affichez{
+.bouton_affichez_plus{
     font-size: 18px;
     font-weight: 700;
 }
 
-/* ------------------------ASIDE----------------------- */
+/* ---- ASIDE LES PLUS POPULAIRES---- */
 
 aside{
     display: flex;
@@ -317,8 +329,9 @@ aside{
     flex: 3;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding-top: 40px;
+    padding-top: 30px;
     margin-left: 40px;
+    /* bloc plus petit donc flex=3 et positionné en colonne */
 }
 
 .titre_aside{
@@ -326,16 +339,20 @@ aside{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 5px;
+    /* titre "les plus populaires" et logo espacé */
 }
 
 .titre_aside h1{
     font-size: 22px;
     font-weight: 700;
+    margin: 20px 0;
 
 }
 .titre_aside i{
     font-size: 18px;
     color: blue;
+    /* logo maquette ne fonctionne pas? */
 }
 
 .conteneur_cartes_aside{
@@ -343,6 +360,7 @@ aside{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    /* cartes disposés en colonne et centré */
 }
 
 .carte_aside{
@@ -353,6 +371,7 @@ aside{
     height: 145px;
     width: 80%; 
     margin-bottom: 30px;
+    /* largeur carte de 80% */
 }
 
 .image_aside{
@@ -361,6 +380,7 @@ aside{
     height: 100%;
     width: 40%;
     margin-right: 6px;
+    /* utilisation de float pour déplacer l'image à gauche */
 }
 
 .texte_stars{
@@ -369,6 +389,7 @@ aside{
     justify-content: space-between;
     align-items:flex-start;
     height: 95%;
+    /* textes et étoiles en colonne et espacés */
 }
 
 .texte h2{
@@ -384,11 +405,12 @@ aside{
 .stars_aside{
     display: flex;
     font-size: 12px;
+    /* utilisation de flex pour aligner les étoiles */
 }
 
-/* ---------------- SECTION ACTIVITE A MARSEILLE--------- */
+/* ---- SECTION ACTIVITES A MARSEILLE ---- */
 
-.activite_marseille{
+.activites_marseille{
     margin-top: 60px;
 }
 
@@ -401,14 +423,14 @@ aside{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* utilisation de space-between pour espacer au max sur les cotés */
 }
 
 .carte_activite{
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 3px 10px lightgray;
-    object-fit: cover;
     width: 23%;
-    height: 445px;
+    height: 445px;    
 }
 
 .carte_activite img{
@@ -423,7 +445,7 @@ aside{
     margin: 10px;
 }
 
-/* --------------------------FOOTER--------------------- */
+/* ---- FOOTER ---- */
 
 footer{
     background-color: #f2f2f2;
@@ -431,7 +453,8 @@ footer{
     justify-content: space-around;
     margin-top: 60px;
     height: 225px;
-    padding-right: 100px;
+    padding-right: 200px;
+    /* 200px de marge intérieur pour se rapprocher de la maquette */
 }
 
 .info_footer{
@@ -443,6 +466,10 @@ footer{
     font-weight: 700;
 }
 
+.info_footer ul{
+    padding-left: 0;
+}
+
 .info_footer li{
     list-style-type: none;
     font-size: 16px;
@@ -450,21 +477,25 @@ footer{
     margin-bottom: 10px;   
 }
 
-.info_footer a{
-    color: black;
-    text-decoration: none;
-}
-
-
-/* -------------------------------------------- */
-/* ----------------MEDIA QUERIES-------------------- */
+/* -------------------------------- */
+/* ---- MEDIA QUERIES TABLETTE ---- */
+/* -------------------------------- */
 
 @media screen and (max-width: 992px) {
+
+    main{
+        margin: 0 20px;
+    }
+    
+/* ---- TABLETTE SECTION HEBERGEMENTS ET ASIDE ---- */
 
     .hebergements_et_aside{
         display: flex;
         flex-direction: column;
+        /* les 2 blocs en tablette sont en colonne */
     }
+
+/* ---- TABLETTE ASIDE LES PLUS POPULAIRES ---- */
 
     aside{
         margin-top: 50px;
@@ -474,20 +505,21 @@ footer{
 
     .titre_aside{
         justify-content: space-between;
-        align-items: center;
     }
 
     .conteneur_cartes_aside{
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
+        /* les cartes en tablette sont en ligne */
     }
 
     .carte_aside{
-        height: 145px;
         width: 30%; 
         margin-bottom: 30px;
+        /* changement de largeur en tablette */
     }
+
+ /* ---- TABLETTE SECTION ACTIVITES ---- */
 
     .conteneur_cartes_activites{
         margin-top: 30px;
@@ -496,69 +528,206 @@ footer{
     .carte_activite{
         width: 21%;
         height: 267px;
+        /* changement de taille des cartes */
     }
 
     .carte_activite img{
-        width: 100%;
         height: 75%;
     }
+
+ /* ---- TABLETTE FOOTER ---- */
+
+    footer{
+        padding-right: 80px;
+    }
+
 }
-    
+
+/* ------------------------------ */
+/* ---- MEDIA QUERIES MOBILE ---- */
 
     @media screen and (max-width: 768px) {
 
+    body {
+        margin: 0;
+    }
 
-        body {
-            margin: 0;
-        }
+    main{
+        margin: 20px 0 0 0;
+    }
 
-        main{
-            margin: 0;
-        }
+/* ---- MOBILE HEADER ----- */
 
-        header {
-            background-color: green;
-            display: flex;
-            flex-direction: column;
-            justify-content:;
-            align-items: center;
-        }
-
-        nav ul {
-            background-color: orange;
-            margin: 0;
-        }
-
-        nav ul li{
-            margin: 0 0 0 0;
-            padding: 10px;
-        }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        /* logo Bookin et la NAV sont en colonnes en mobile */
+    }
         
-        nav ul li a{
-            padding: 10px;
-            color: black;
-            text-decoration: none;
-            font-size: 16px;
-            border: 2px black solid;
-            /* difficulté avec hover lien a car decalage vers le haut */
-        }
+    .bouton_hebergements{
+        padding: 45px 30px 22px 30px;
+    }
         
-        nav ul li a:hover{
+    .bouton_activites{
+        padding: 45px 60px 22px 60px;
+    }
 
-            color: blue;
-            font-weight: 500;
-            border-top: 2px blue solid;
-        }
+    nav{
+        width: 100%;
+        padding-bottom: 5px;
+        border-bottom: 2px #f2f2f2 solid;
+        /* ligne grise en dessous de la NAV avec une largeur à 100% */
+    }
         
-        
-        
-    
-    
-    
-    
-    
+    nav ul{
+        justify-content: center;
+        padding: 0;       
+    }
 
+    .bouton_hebergements:hover, .bouton_activites:hover{
+        border-top: none;
+        border-bottom: 2px blue solid;
+    }
+
+/* ---- MOBILE BAR RECHERCHE ---- */
+
+    .recherche h1, .recherche h2, .form_recherche{
+        margin-left: 20px;
+    }
+
+    .logo_recherche{
+         width: 50px;
+    }
+
+    .rechercher{
+        display: none;
+    }
+        
+    .icone_loupe{
+        display: inline;
+        /* apparition du logo loupe à la place de rechercher */
+    }
+
+/* ---- MOBILE FILTRES ---- */
+
+    .liens_filtres{
+        flex-direction: column;
+        /* en mobile le titre "filtres" et les boutons filtres sont en colonnes */
+    }
+
+    .liens_filtres h2{
+        margin-left: 20px;
+    }
+
+    .liens_filtres ul{
+        margin: 0;
+        width: 100%;
+        justify-content: flex-start;
+        /* les boutons filtres sont toujours en lignes et situé à gauche */
+    }
+
+    .bouton_filtre{
+        margin: 0 15px 15px 0;
+        min-width: 35%;
+        font-size: 11px;
+        /* la largeur minimum de 35% permet le décalage en bas */
+    }
+
+    .info{
+        margin: 20px 0 0 20px
+    }
+
+/* ---- MOBILE SECTION HEBERGEMENT ET ASIDE LES PLUS POPULAIRES ---- */
+
+    .hebergements_et_aside{            
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+        /* le bloc hebergements et les plus populaires sont inversés */
+    }
+
+/* ---- MOBILE ASIDE LES PLUS POPULAIRES ---- */
+
+    aside{
+        border-radius: 0;
+        margin-top: 30px;
+        padding: 20px 20px 40px 20px;
+    }
     
+    .conteneur_cartes_aside{
+        flex-direction: column;
+
+    }
+    .carte_aside{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+/* ---- MOBILE ARTICLE HEBERGEMENTS ---- */
+
+    .articles_hebergements {
+        background-color: white;
+        margin: 0;
+        padding: 0 20px;
+    }
+    .conteneur_cartes_hebergements{
+        flex-flow: column;
+        background-color: white;
+        /* la couleur du fond devient blanc */
+    }
+    .carte_hebergements{
+        height: 199px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .bouton_affichez_plus {
+        display: none;
+    }
+
+/* ---- MOBILE SECTION ACTIVITES A MARSEILLE ---- */
+
+    .activite_marseille{
+        margin: 80px 20px;
+    }
+
+    .activite_marseille h1{
+        width: 60%;
+        margin-bottom: 0;
+        /* 60% de largeur pour le titre sur 2 lignes comme la maquette */
+    }
+
+    .conteneur_cartes_activites{    
+        flex-direction: column;
+        margin-top: 10px;
+        /* disposition en colonne sur mobile */
+    }
+
+    .carte_activite{            
+        width: 100%;
+        height: 190px;
+        margin-bottom: 24px;
+        /* largeur différente sur mobile */
+    }
+
+/* ---- MOBILE FOOTER ---- */
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+        margin-top: 80px;
+        padding-left: 20px;
+        padding-bottom: 60px;
+        /* disposition en colonne */
+    }
     
+    .info_footer h2{
+        margin-top: 0;
+    }
 
 }
+
+/* fin */
+
