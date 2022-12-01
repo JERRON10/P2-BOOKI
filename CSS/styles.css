@@ -7,14 +7,14 @@
 /* ---- BODY ---- */
 
 body{
-    font-family: "raleway";
+    font-family: "raleway", Arial, Helvetica, sans-serif;
     font-weight: 400;
     margin: 0;
 }
 
 main{
     max-width: 1400px;
-    margin: 0 50px;
+    margin: auto;
 }
 
 img{
@@ -28,11 +28,10 @@ a{
     /* tous les liens sans décorations */
 }
 
-/* ---- HEADER ---- */
+/* ---- HEADER (logo + nav) ---- */
 
 header{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -74,8 +73,9 @@ nav li{
 .bouton_hebergements:hover, .bouton_activites:hover{
     color: blue;
     /* font-weight: 500; */
-    /* google chrome ok mais firefox non */
+    /* attention: google chrome ok mais firefox non */
     border-top: 2px blue solid;
+    /* couleur du texte et bordure haute apparaissent au survole */
 }
 
 /* ----SECTION RECHERCHE ---- */
@@ -157,7 +157,6 @@ input{
 .liens_filtres{
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
     width: 100%;
@@ -334,7 +333,6 @@ aside{
 
 .titre_aside{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 5px;
@@ -420,7 +418,6 @@ aside{
 
 .conteneur_cartes_activites{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     /* utilisation de space-between pour espacer au max sur les cotés */
 }
@@ -454,7 +451,7 @@ footer{
     margin-top: 60px;
     height: 225px;
     padding-right: 200px;
-    /* 200px de marge intérieur pour se rapprocher de la maquette */
+    /* 200px de marge intérieur droite pour se rapprocher de la maquette */
 }
 
 .info_footer{
@@ -477,9 +474,20 @@ footer{
     margin-bottom: 10px;   
 }
 
-/* -------------------------------- */
-/* ---- MEDIA QUERIES TABLETTE ---- */
-/* -------------------------------- */
+/* ----------------------- */
+/* ---- MEDIA QUERIES ---- */
+/* ----------------------- */
+
+@media screen and (max-width: 1400px) { 
+
+    main{
+        margin: 0 40px;
+    }
+    
+}
+
+/* ---------------------- */
+/* MEDIA QUERIES TABLETTE */
 
 @media screen and (max-width: 992px) {
 
@@ -528,7 +536,7 @@ footer{
     .carte_activite{
         width: 21%;
         height: 267px;
-        /* changement de taille des cartes */
+        /* changement de taille des cartes activités */
     }
 
     .carte_activite img{
